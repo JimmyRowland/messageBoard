@@ -1,0 +1,74 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Home</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body onload=onload()>
+
+<nav>
+  <div class="navbar dark">
+    <div class="nav-left" onclick="location.href = 'home.html';">
+      <div>Home</div>
+    </div>
+    <div class="navbar-right">
+      <div class="nav-button" onclick="location.href = 'about.html';">About</div>
+      <div class="nav-button" onclick="location.href = 'project.html'">Project</div>
+      <div class="nav-button" onclick="location.href = 'https://jimmyrowland.github.io/Portfolio/build/'">Portfolio</div>
+    </div>
+  </div>
+</nav>
+<div class="background">
+  <div class="black"></div>
+  <div class="white"></div>
+  <div class="grey"></div>
+</div>
+<div class="container">
+  <!--[if IE]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  <div class ="messageBoard">
+    <div class="mb-header">
+      <h1 class="mb-h1">
+        @ VerY FunCt1on@l m3ss@ge b0ard tHat d0e$ not sto3 y03 me$$Age
+      </h1>
+    </div>
+    <div class="mb-msg-container" id="mb-msg-container">
+
+    </div>
+    <div class="mb-form">
+      <textarea class="msg-input-textarea" cols="50" rows="6" id="textInput"></textarea>
+      <button class="msg-submit-btn" onclick="handleSubmit()">Post</button>
+      <button class="msg-submit-btn" onclick="handleClear()">Clear</button>
+      <button class="msg-submit-btn" onclick="handleClearFrom()">Clear From</button>
+    </div>
+  </div>
+</div>
+
+
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
